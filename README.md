@@ -45,6 +45,7 @@ CoreWatch has two main components:
 ---
 
 ## 📂 Folder Structure
+``` plaintext
 COREWATCH/
 │
 ├── frontend/ # Frontend dashboard (React.js)
@@ -67,6 +68,7 @@ COREWATCH/
 ├── README.md # this file
 ├── requirements.txt # Python dependencies
 
+```
 ## 📋 Requirements
 
 Before installing, make sure you have:
