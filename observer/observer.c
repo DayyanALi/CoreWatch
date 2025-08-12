@@ -181,9 +181,7 @@ int main(int argc, char **argv)
                     if (bpf_map_lookup_elem(m->fd1, &next, &value) == 0) {
                         fprintf(out, "%ld %s{pid=\"%llu\"} %llu\n", now, m->name, next, value);
                         fflush(out);
-                        // printf("%s{pid=\"%u\"} %llu\n", m->name, next, value);
                     }
-                    // clear for next interval
                     bpf_map_delete_elem(m->fd1, &next);
                     key = next;
                 }
